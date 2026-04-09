@@ -1,0 +1,83 @@
+============================================================
+       🩸 BLOOD INFECTION DETECTION SYSTEM 🩸
+============================================================
+              🚀 PRESENTATION SLIDES 🚀
+============================================================
+(Read these blocks as individual PowerPoint slides!)
+
+------------------------------------------------------------
+[ SLIDE 1: Title ]
+------------------------------------------------------------
+🩸 Blood Infection Detection System
+AI-Powered Medical Diagnostic Dashboard
+
+(Your Name / Final Year Project Presentation)
+
+
+------------------------------------------------------------
+[ SLIDE 2: What is this Project? ]
+------------------------------------------------------------
+🎯 Overview
+🔹 An intelligent full-stack dashboard to predict sepsis (blood infection) risks.
+🔹 Analyzes core patient health metrics:
+      - WBC Count
+      - Heart Rate
+      - Oxygen (SpO2)
+      - Temperature & Blood Pressure
+🔹 Provides real-time AI predictions instead of waiting for long lab cultures!
+
+
+------------------------------------------------------------
+[ SLIDE 3: Technologies We Use ]
+------------------------------------------------------------
+💻 Project Tech Stack
+🔹 Frontend: React.js & Vite (Fast, Interactive UI)
+🔹 Backend: FastAPI (High-performance Python server)
+🔹 Database: SQLite (Lightweight, portable data storage)
+🔹 AI Models: Random Forest & XGBoost 🧠
+🔹 Visuals: Recharts (Animated SVG data visualizers)
+
+
+------------------------------------------------------------
+[ SLIDE 4: Why AI? (Methodology) ]
+------------------------------------------------------------
+🧠 Machine Learning Pipeline
+🔹 SMOTE: Balances our data artificially so the AI doesn't become mathematically biased toward "Healthy" patients.
+🔹 StandardScaler: Normalizes metrics so huge numbers (like 250,000 Platelets) don't overshadow small ones (like 14 Hemoglobin).
+🔹 GridSearchCV: Automatically tunes the AI parameters across hundreds of combinations to find the absolute highest accuracy!
+
+
+------------------------------------------------------------
+[ SLIDE 5: How to Run Locally ]
+------------------------------------------------------------
+🛠️ Running the Dashboard (Localhost)
+To run the system, launch two terminals:
+
+1️⃣ Backend Server:
+    cd backend -> pip install -r requirements.txt -> uvicorn main:app --reload
+2️⃣ Frontend UI:
+    cd frontend -> npm install -> npm run dev
+3️⃣ Open: 
+    http://localhost:5173 in any modern web browser!
+
+
+------------------------------------------------------------
+[ SLIDE 6: Technical Highlights & Q&A ]
+------------------------------------------------------------
+❓ Q&A Highlights
+
+Q: Why do we use two different AI models concurrently?
+A: To contrast results! XGBoost is incredible for skewed medical data, while Random Forest is highly reliable for dense clinical arrays.
+
+Q: What is the Safe Override?
+A: A hard-coded medical safety net! If all vitals are normal mathematically, we bypass the AI equation entirely to prevent dangerous edge-case hallucinations.
+
+
+------------------------------------------------------------
+[ SLIDE 7: Conclusion ]
+------------------------------------------------------------
+🎉 Thank You!
+
+Questions?
+Blood Infection Detection System
+============================================================
