@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fi';
 import './index.css';
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://blood-infection-detection.onrender.com/api";
 
 function App() {
   const [formData, setFormData] = useState({
