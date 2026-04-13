@@ -123,6 +123,8 @@ body {
   padding: 1.5rem 2rem;
   overflow-y: auto;
   overflow-x: hidden;
+  height: 0;
+  min-height: 0;
 }
 
 .top-bar {
@@ -279,18 +281,18 @@ html {
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--panel-border);
+  background: var(--text-secondary);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-secondary);
+  background: var(--text-primary);
 }
 
 /* Keyframes for Panel Entrance */
