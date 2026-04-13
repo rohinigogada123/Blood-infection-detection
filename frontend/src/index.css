@@ -135,7 +135,7 @@ body {
 
 .top-bar h2 {
   margin: 0 0 0.3rem 0;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -145,9 +145,8 @@ body {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: minmax(320px, 1fr) minmax(280px, 1.1fr);
-  grid-template-rows: minmax(260px, auto) minmax(200px, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: clamp(0.75rem, 2vw, 1.25rem);
   flex: 1;
   min-height: 0;
 }
@@ -156,7 +155,7 @@ body {
   background: var(--panel-bg);
   border: 1px solid var(--panel-border);
   border-radius: 14px;
-  padding: 1.25rem;
+  padding: clamp(1rem, 2.5vw, 1.25rem);
   box-shadow: var(--panel-shadow);
   display: flex;
   flex-direction: column;
@@ -164,7 +163,7 @@ body {
   position: relative;
 }
 
-.panel h3 { margin: 0 0 1rem 0; font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.panel h3 { margin: 0 0 1rem 0; font-size: clamp(0.9rem, 2vw, 1rem); font-weight: 600; color: var(--text-primary); }
 
 .custom-input-box {
   display: flex;
@@ -263,8 +262,8 @@ body {
   padding: 1.2rem;
   display: flex; flex-direction: column; justify-content: center; align-items: center;
 }
-.metric-box span { color: var(--text-secondary); font-size: 0.8rem; font-weight: 600;}
-.metric-box h2 { margin: 0; font-size: 1.8rem; font-weight: 700; color: var(--text-primary);}
+.metric-box span { color: var(--text-secondary); font-size: clamp(0.7rem, 1.5vw, 0.8rem); font-weight: 600;}
+.metric-box h2 { margin: 0; font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 700; color: var(--text-primary);}
 
 .table-panel { padding: 0; }
 .table-panel h3 { padding: 1.2rem; margin: 0; border-bottom: 1px solid var(--table-border);}
@@ -427,6 +426,9 @@ tbody tr:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
   .mobile-menu-btn {
     display: block;
   }
